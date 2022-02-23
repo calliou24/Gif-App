@@ -1,3 +1,13 @@
+
+
+*::-webkit-scrollbar {
+  display:none;
+}
+
+* {
+user-select:none
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,15 +18,6 @@ body {
   color: #fff;
 
 }
-
-*::-webkit-scrollbar {
-    display:none;
-}
-
-* {
-  user-select:none
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -35,7 +36,6 @@ code {
   cursor: pointer;
   display: flex;
   align-items: center;
-
 }
 .logo-cont > h1 {
   font-weight: lighter;
@@ -115,6 +115,7 @@ code {
   margin: 30px 0;
   cursor: pointer;
   text-align: center;
+  position: relative;
 }
 .ul-gif-grid > li > p {
   position: relative;
@@ -135,18 +136,20 @@ code {
   position: absolute;
   content: '';
   display:grid;
-  min-width: 250px;
-  max-width: 250px;
-  min-height: 300px;
+  min-width:100%;
+  min-height:100%;
   place-items: center;
   margin: 0 auto;
-  background-color: #0008;
+  background-color: #0009;
   transition: all .2s;
+  opacity: 0;
   transform: scale(0);
+  transform: origin(center);
 }
 
 .ul-gif-grid > li:hover:after{
   content: 'Copy URL';
+  opacity: 1;
   transform: scale(1);
 
 }
@@ -163,23 +166,33 @@ code {
   
 }
 @media screen and (max-width: 768px) {
-  .gif-grid {
-    
-  }
+
   .ul-gif-grid {
     display:flex;
     flex-direction:column;
   
   }
-  .ul-gif-grid > li {
-    min-width: 90%;
-    max-width: 90%;
-    margin: auto;
-  }
   .ul-gif-grid > li > .image-cont {
     max-width:100%;
     max-height: 100%;
     
+  }
+  .ul-gif-grid > li {
+    display: grid;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 300px;
+    font-size: .8rem;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff9; 
+    background-color: #0003;
+    outline:1px solid #fff1 ;
+    overflow: hidden;
+    margin: 30px 0;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
   }
   
 }
@@ -192,10 +205,23 @@ code {
   margin: 50px 0;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1000px){
   .form-cont{ 
-    width: 300px;
+    width: 75%;
+    margin:60px auto;
   }
+  .logo-cont {
+    width: 50px;
+    height: 50px;
+    margin: 20px 0;
+    position: relative;
+    left: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  
+  }
+
 }
 
 .btn-add-cat{ 
@@ -206,6 +232,16 @@ code {
   background-color: #6272a4;
   color: #fff;
   font-weight: bolder;
+
+}
+@media screen and (max-width: 1000px) {
+  .btn-add-cat{ 
+    padding:4px 5px;
+    margin: 10px 5px;
+    background-color: #6272a4;
+    font-weight: lighter;
+  
+  }
 
 }
 input {
@@ -237,3 +273,5 @@ form {
   font-size: .8rem;
   color:#bd93f9;
 }
+
+

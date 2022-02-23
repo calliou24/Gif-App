@@ -4,12 +4,11 @@ export const GifComponent = ({title,url}) => {
 
 
   return (
-    <li onClick={()=>{
+    <li className='animate__animated animate__bounceInLeft' onClick={()=>{
       navigator.clipboard.writeText(url)
       }}>
         <div className='image-cont'><img  src={url} alt={title}></img></div>
         <div><p>{title}</p></div>
-
     </li>
   )
 }
