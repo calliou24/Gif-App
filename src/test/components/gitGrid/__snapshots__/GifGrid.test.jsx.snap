@@ -1,0 +1,18 @@
+// Vitest Snapshot v1
+
+exports[`Should check for snapshots > Snapshot 1`] = `
+<div
+  className="gif-grid"
+>
+  <h2
+    className="gif-grid-title animate__animated animate__flipInX"
+  >
+    Anime
+  </h2>
+  <ul
+    className="ul-gif-grid"
+  >
+    Loading...
+  </ul>
+</div>
+`;

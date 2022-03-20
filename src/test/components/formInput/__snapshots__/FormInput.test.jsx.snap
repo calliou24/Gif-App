@@ -1,0 +1,36 @@
+// Vitest Snapshot v1
+
+exports[`Testing the formInput component > The components should show well 1`] = `
+<div
+  className="form-cont"
+>
+  <p>
+    Search
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="..."
+    />
+    <p
+      className="text-reflect"
+      id="p"
+    />
+    <button
+      className="btn-add-cat"
+      type="submit"
+    >
+      Add
+    </button>
+    <button
+      className="btn-add-cat"
+      onClick={[Function]}
+      type="submit"
+    >
+      Reset
+    </button>
+  </form>
+</div>
+`;

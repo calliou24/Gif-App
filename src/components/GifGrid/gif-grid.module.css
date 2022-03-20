@@ -1,0 +1,48 @@
+.gifCategory {
+  display: grid;
+  row-gap: 40px;
+}
+
+.titleCont {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.deleteCat{
+  background:none;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: red;
+  text-align: center;
+  cursor: pointer;
+  background:var(--secondary-color);
+  padding:10px;
+}
+
+.deleteCat:hover {
+  opacity: .8;
+}
+.listGrid{
+  list-style: none;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+@media (max-width : 50em){
+  
+.listGrid{
+  list-style: none;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, 1fr);
+
+}
+}

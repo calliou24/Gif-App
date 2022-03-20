@@ -1,0 +1,22 @@
+// Vitest Snapshot v1
+
+exports[`Button component > Snapshot 1`] = `
+<li
+  className="animate__animated animate__bounceInLeft"
+  onClick={[Function]}
+>
+  <div
+    className="image-cont"
+  >
+    <img
+      alt="TITLE"
+      src="https://music.youtube.com"
+    />
+  </div>
+  <div>
+    <p>
+      TITLE
+    </p>
+  </div>
+</li>
+`;
