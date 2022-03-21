@@ -36,6 +36,10 @@
 
 }
 
+.checkIcon{
+  color:greenyellow;
+}
+
 @media (max-width : 50em){
   
 .listGrid{
